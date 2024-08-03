@@ -85,7 +85,7 @@ function App() {
       <ExportButton onClick={handleExport} />
       <Instructions show={showInstructions} onClose={() => setShowInstructions(false)} />
       <Modal isVisible={isExportModalVisible} onClose={() => setExportModalVisible(false)}>
-        <h2 className="text-xl font-bold text-white mb-4">Exported Code:</h2>
+        <h2 className="text-xl font-bold text-white mb-4">Exported Code</h2>
         <div className="hidden-data">{exportData}</div>
         <button onClick={() => navigator.clipboard.writeText(exportData)} className="copy-button">Copy</button>
       </Modal>
