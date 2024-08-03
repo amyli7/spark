@@ -26,7 +26,7 @@ To set up Spark locally, follow these steps:
 1. **Start the Development Server:**
     ```npm run dev```
 
-2. ***Access the Application:***
+2. **Access the Application:**
     Open http://localhost:3000 in your web browser.
 
 ## Usage
