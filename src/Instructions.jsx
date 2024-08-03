@@ -19,7 +19,7 @@ export const Instructions = ({ show, onClose }) => (
         <li>Click on the canvas to add a new point.</li>
         <li>Click on an existing point to select it.</li>
         <li>Drag selected point to move it.</li>
-        <li>Click on the selected point to set its angle.</li>
+        <li>Click on selected point to set its angle.</li>
         <li>Press 'd' to delete the last point.</li>
         <li>Press 'e' to deselect any selected point.</li>
       </ul>
