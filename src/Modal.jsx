@@ -6,7 +6,7 @@ const Modal = ({ isVisible, onClose, children }) => {
 
   return (
     <div
-      className="fixed top-0 left-0 right-0 bottom-0 bg-gray-900 bg-opacity-75 flex items-center justify-center"
+      className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-75 flex items-center justify-center"
       style={{ zIndex: 1000 }}
     >
       <div

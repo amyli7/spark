@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'dark-purple': '#3c1053'
+        'dark-purple': '#3c1053',
       },
       minWidth: {
         'md': '300px',

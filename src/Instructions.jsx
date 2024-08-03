@@ -4,7 +4,7 @@ import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 
 export const Instructions = ({ show, onClose }) => (
   <div
-    className={`fixed top-0 left-0 right-0 bottom-0 bg-gray-800 bg-opacity-75 flex items-center justify-center ${show ? 'block' : 'hidden'}`}
+    className={`fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-75 flex items-center justify-center ${show ? 'block' : 'hidden'}`}
     style={{ zIndex: 1000 }}
   >
     <div className="bg-purple-900 p-6 rounded-lg max-w-lg mx-auto relative">
