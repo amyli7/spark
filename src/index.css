@@ -1,0 +1,161 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+@keyframes move {
+  100% {
+      transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #000000;
+  overflow: hidden;
+}
+
+.background span {
+  width: 50vmin;
+  height: 50vmin;
+  border-radius: 50vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 20;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.background span:nth-child(0) {
+  color: #f0e0ff;
+  top: 1%;
+  left: 36%;
+  animation-duration: 280s;
+  animation-delay: -99s;
+  transform-origin: -11vw 2vh;
+  box-shadow: 100vmin 0 13.124377645694832vmin currentColor;
+}
+.background span:nth-child(1) {
+  color: #d7afdf;
+  top: 89%;
+  left: 1%;
+  animation-duration: 265s;
+  animation-delay: -270s;
+  transform-origin: -11vw -22vh;
+  box-shadow: 100vmin 0 13.042434665088692vmin currentColor;
+}
+.background span:nth-child(2) {
+  color: #5c408c;
+  top: 13%;
+  left: 8%;
+  animation-duration: 59s;
+  animation-delay: -244s;
+  transform-origin: -6vw -21vh;
+  box-shadow: 100vmin 0 12.592305215812571vmin currentColor;
+}
+.background span:nth-child(3) {
+  color: #825fe3;
+  top: 4%;
+  left: 13%;
+  animation-duration: 224s;
+  animation-delay: -212s;
+  transform-origin: -7vw -10vh;
+  box-shadow: -100vmin 0 13.449693903803174vmin currentColor;
+}
+.background span:nth-child(4) {
+  color: #7159ea;
+  top: 97%;
+  left: 58%;
+  animation-duration: 266s;
+  animation-delay: -174s;
+  transform-origin: -3vw -3vh;
+  box-shadow: -100vmin 0 12.752461702033797vmin currentColor;
+}
+.background span:nth-child(5) {
+  color: #5d4db9;
+  top: 82%;
+  left: 14%;
+  animation-duration: 83s;
+  animation-delay: -80s;
+  transform-origin: 24vw 9vh;
+  box-shadow: 100vmin 0 13.006639344524313vmin currentColor;
+}
+
+.canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+canvas {
+  background: url('./assets/centerstageBackground.png') no-repeat center center;
+  background-size: cover;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  @apply flex flex-col items-center;
+}
+
+.instructions-button {
+  @apply fixed top-8 left-8 w-12 h-12 bg-purple-600 text-white flex items-center justify-center rounded-full text-xl z-50 transition-colors duration-300 ease-in-out;
+}
+
+.instructions-button:hover {
+  @apply bg-purple-800;
+}
+
+.instructions-button svg {
+  @apply w-6 h-6;
+}
+
+.export-button {
+  @apply fixed top-8 left-[calc(2rem+3rem+1rem)] w-12 h-12 bg-purple-600 text-white flex items-center justify-center rounded-full text-xl z-50 transition-colors duration-300 ease-in-out;
+}
+
+.export-button:hover {
+  @apply bg-purple-800;
+}
+
+.export-button svg {
+  @apply w-6 h-6;
+}
+
+.modal-content {
+  @apply bg-purple-900 p-6 rounded-lg shadow-lg relative;
+  @apply max-w-md min-w-md;
+  max-height: 80vh;
+}
+
+.modal-close-button {
+  @apply absolute top-2 right-2 w-8 h-8 bg-dark-purple text-white rounded-full flex items-center justify-center text-xl font-semibold hover:bg-purple-800 focus:outline-none;
+}
+
+.copy-button {
+  @apply mt-4 bg-dark-purple text-white py-2 px-4 rounded cursor-pointer;
+}
+
+.copy-button:hover {
+  @apply bg-purple-800;
+}
+
+.hidden-data {
+  @apply overflow-auto max-h-48 whitespace-pre-wrap text-white;
+}
