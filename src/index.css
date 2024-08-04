@@ -38,7 +38,7 @@ html, body {
 }
 
 .background span:nth-child(0) {
-  color: #f0e0ff;
+  color: #d4aef8;
   top: 1%;
   left: 36%;
   animation-duration: 280s;
@@ -47,7 +47,7 @@ html, body {
   box-shadow: 100vmin 0 13.124377645694832vmin currentColor;
 }
 .background span:nth-child(1) {
-  color: #d7afdf;
+  color: #ccb2ff;
   top: 89%;
   left: 1%;
   animation-duration: 265s;
