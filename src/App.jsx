@@ -44,7 +44,7 @@ function App() {
   
     if (points.length > 0) {
       const firstPoint = points[0];
-      const formattedFirstPoint = `drive.trajectorySequenceBuilder(new Pose2d(${
+      const formattedFirstPoint = `myBot.runAction(myBot.getDrive().actionBuilder(new Pose2d(${
         roundToDecimalPlaces(scalePoint(-firstPoint.y, canvasSize), 2)
       }, ${
         roundToDecimalPlaces(scalePoint(-firstPoint.x, canvasSize), 2)
