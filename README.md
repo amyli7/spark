@@ -1,6 +1,6 @@
 # Spark
 
-**Spark** is a web application designed to help FTC robotics teams with motion prototyping and code generation. It provides an interactive canvas where users can create, adjust, and export robot movements as code for use in robotics programming.
+**Spark** is a web application designed to help FTC robotics teams with trajectory code generation. It provides an interactive canvas where users can create, adjust, and export robot movements as code for use in robotics programming.
 
 ## Features
 
