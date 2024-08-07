@@ -4,9 +4,9 @@
 
 ## Features
 
-- **Interactive Canvas:** Draw and edit robot movements with an intuitive, responsive interface.
-- **Code Export:** Convert motion designs into code suitable for FTC robotics systems.
-- **User-Friendly Design:** Streamlined for ease of use and efficiency.
+- **Interactive Canvas:** Draw and edit robot movements on the intuitive interface.
+- **Code Export:** Convert motion designs into code for Road Runner and Meep Meep.
+- **User-Friendly Design:** Implemented for ease of use and efficiency.
 
 ## Installation
 
@@ -28,10 +28,6 @@ To set up Spark locally, follow these steps:
 
 2. **Access the Application:**
     Open http://localhost:3000 in your web browser.
-
-## Usage
-- Design Movements: Use the interactive canvas to create and adjust robot motion paths.
-- Export Code: Save your designs as code for integration with Road Runner/ Meep Meep.
 
 ## Contributions
 Contributions are welcome! If you have any suggestions, bug fixes, or improvements, please open an issue or submit a pull request.
