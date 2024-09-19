@@ -29,7 +29,7 @@ html, body {
 }
 
 canvas {
-  background: url('./assets/centerstageBackground.png') no-repeat center center;
+  background: url('./assets/2025Background.png') no-repeat center center;
   background-size: cover;
 }
 
