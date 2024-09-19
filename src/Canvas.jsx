@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import backgroundImage from './assets/centerstageBackground.png';
+import backgroundImage from './assets/2025Background.jpg';
 
 const drawArrowhead = (ctx, fromX, fromY, toX, toY, isSelected) => {
   const headLength = 35;
@@ -7,7 +7,6 @@ const drawArrowhead = (ctx, fromX, fromY, toX, toY, isSelected) => {
   const angle = Math.atan2(toY - fromY, toX - fromX);
 
   const thirtyDegrees = Math.PI / 6;
-
   const x1 = toX - headLength * Math.cos(angle - thirtyDegrees / 2);
   const y1 = toY - headLength * Math.sin(angle - thirtyDegrees / 2);
   const x2 = toX - headLength * Math.cos(angle + thirtyDegrees / 2);
