@@ -60,7 +60,7 @@ function App() {
         }), Math.toRadians(${roundToDecimalPlaces(-point.theta, 2)}))`;
         exportLines.push(formattedPoint);
       }
-      exportLines.push('.build()');
+      exportLines.push('.build());');
     }
   
     return exportLines.join('\n');
